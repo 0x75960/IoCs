@@ -60,15 +60,15 @@ enum Commands {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
+    let command = Commands::from_args();
+
     let mut buffer = String::new();
 
-    if isatty::stdin_isatty() == false {
-        std::io::stdin().read_to_string(&mut buffer)?;
-    }
+    std::io::stdin().read_to_string(&mut buffer)?;
 
     let matcher = IoCMatcher::new();
 
-    match Commands::from_args() {
+    match command {
         Commands::Hashes => {
             for item in matcher.hashes_in(&buffer) {
                 println!("{}", item);
