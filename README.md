@@ -1,5 +1,7 @@
-IoCs: IoC scraper
-==================
+IoCs
+======
+
+IoC scraper
 
 Usage
 -------
@@ -29,4 +31,13 @@ SUBCOMMANDS:
     help      Prints this message or the help of the given subcommand(s)
     ips       scrape ip addresses(allow to contain "[]") from stdin pipe
     urls      scrape URLs(only start with hxxp, allow to contain "[]") from stdin pipe
+```
+
+Installation
+-------------
+
+just works in linux now.
+
+```sh
+cargo install --git https://github.com/0x75960/IoCs
 ```
