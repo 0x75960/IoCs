@@ -1,0 +1,10 @@
+[package]
+name = "IoCs"
+version = "0.1.0"
+authors = ["Hiromitsu Oshiba <0x75960@strelka.cc>"]
+edition = "2018"
+
+[dependencies]
+isatty = "0.1"
+regex = "1.0"
+structopt = "0.2"
