@@ -36,8 +36,6 @@ SUBCOMMANDS:
 Installation
 -------------
 
-just works in linux now.
-
 ```sh
 cargo install --git https://github.com/0x75960/IoCs
 ```
